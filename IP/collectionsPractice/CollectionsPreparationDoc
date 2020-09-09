@@ -1,0 +1,25 @@
+Collection Framework:
+->Collection is a group of individual objects represented as a single unit
+->Collection interface has two main root interfaces 
+    1)java.util.Collection
+    2)java.util.Map
+
+->Before Collections or before JDk 1.2 to handle group of individual date been handled using arrays, vectors,Hashtable
+    and all of these collections had no common interface. and its very musch hassle to handle as each has different
+    method to access to his members.
+-> Another drawback of being that most of the vector methods are final, so we can't extend the Vector class to
+    implement similar kind of Collection.
+
+    Collection Framework Heirarchy:
+    I) Collection
+    1)Set  -> SortedSet
+    2)List
+    3)Queue
+    4)Dequeue
+
+    II) Map ->SortedMap
+    
+
+
+
+

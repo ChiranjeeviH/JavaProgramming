@@ -1,0 +1,12 @@
+Types of Data Structures
+1)Primitive Data Structure
+    ->Integer,Float,Character,Boolean
+2)Non-Primitive Data Structure
+    ->Linear Data Structure -> 1)Array,Linked List, Stack, Queue, Dequeue
+    ->Non-Linear Data Structure -> 1)Tree 2)Graphs
+
+-> primitive data Structures represents single value
+->Linear Data Structure represents multiple values. it travese the data sequentially. i.e, only one data
+    element can be directly reached from the given point.
+-> Non-Linear data structure represents multiple values. the way of represeting the data in the structure makes
+    access the multiple elements.

@@ -1,0 +1,30 @@
+-> Linked list a liner data structure where each element is a seperate object. Each element(Node)  comprises
+    of two items 1)Data 2)reference to the next item. most powerful feature of linked list is it's variable size
+-> Linked List Vs Array
+    1) In Linked list , every object is an seperate object but where as in array as one object.. 
+        you can't destory particular location in an array.. where as we can delete whole node 
+    2) Linked list size is dynamic since, it's a link need to establish.. Array is fixed size.
+    3) We cannot access elements randomly in Linked list where as in array we can access randomly using
+        memory location since it is contigiuos.
+    
+Component of a Linked list:
+Node : is a class which contians data and reference of the next node (Memory address of the node)
+Head : is the first node in the Linked list 
+Tail : is the last node in the Linked list (Necessicity of maintaining the tail node is, so that when ever
+    user want to add a new node in the end of the existing linked list, need not to traverse whole LL. we can avoid O(n)
+    and can acheive O(1) complexity to add a new node)
+
+Types of Linked List:
+1)Single Linked List -> having data and Link in a single node
+2)Circular Single Linked List -> last node contains the address of first node(
+3)Doubly Linked List -> having two references and data ..so that we can traverse both the directions
+4)Circular Double Linked List -> contains the node1 address in the last node and vice-versa.
+
+common properties of a linked list
+1)Creation of a linked list
+2)Insertion of a Linked list
+3)traversal of a linkef list
+4)Search on a Linked list
+5)Deletion of a node from linked list
+6)Deletion of a entire Linked list
+

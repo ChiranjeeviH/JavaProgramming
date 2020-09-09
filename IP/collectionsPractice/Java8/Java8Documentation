@@ -1,0 +1,112 @@
+Java 8 new Features
+
+why java 8 -> consice code, Resuable coding, functional programming
+1) Lamda Expressions
+2) Functional Interfaces
+3) Default and static Methods in Interfaces
+4) Predefined Functional Interfaces
+    Predicate
+    Function
+    consumer
+    supplier
+5) Double colon operator (Method reference)
+6) Streams
+7) Date and Time API
+8) Optional class
+9) Noshorn Javascript Engine
+
+1)Lamda Expressions 
+-> first used in LISP in 1930
+-> Lamda Expressions are used in jave to bring functional programming into java
+-> Def : Anonymous function i.e, nameless, no return type , no identifiers
+    ->when compiler can understand the return type then need not mention the datatype in variables
+    ->when curley braces are not used then we no need to use return keyword explicitly
+    ->(s) -> s.lenght(); -> if only one parameter is there no need to use braces as well s -> s.length();
+
+2) Existing Functional Interfaces in java before java8
+1)Runnable ->run()
+2)Callable -> call()
+3)Comparable -> compareTo()
+4)ActionListener -> actionPerformed()
+5)Comprator -> compare()
+-> to invoke lamda expressions we need Functional interface(
+     Which should contain only one abstract method and can have any number of default and static methods init)
+-> we can annotate a function with @FuntionalInterface so that compiler throws an error if programmer made mistake
+    syntactically.
+-> lamda expressions cannot use other than frnctional interface
+
+Anonymous Inner classes vs Lamda Expressions:
+-> Anonymous inner class can be implemented even when interface is having more than one abstract method,
+    where as lamda expressios can be implemented only when one abstract methos exist.
+-> Anonymous class can extend normal class
+-> Anonymous class can extend abstract class
+
+3) Default methods and static methods
+
+-> backward compatability (we can add new methods in Interfaces)
+-> Default methods are allowed only in interfaces
+-> we can't declare object class methods as default methods (becuase it's already available for all classes)
+-> we can't have duplicate default methods when implements both the interfaces in the same class
+-> by overriding the duplicate methods from two interfaces in implementation class we can override the method.
+-> two call actuall default methods from those two interfaces we can use interfaceName.super.methodName.
+    syntx:A.super.m4();
+
+-> if the method can be invoke with out an object creation, we can always make it static and can place in
+    interface since, interface is lighter weight component than class.
+-> Interface static methods can only be called only using interface name only. Ex: InterfaceName.MethodName.
+-> static methods in the java interfaces are . Collection Interface has sort(),binarySearch()
+-> static methods in interface makes users to create utility methods which we can use anywhere without creating Obj.
+
+4) Predefined Functional Interfaces
+-> Predicate
+-> Function
+-> consumer
+-> supplier
+  Two Argument predefined functional interfaces
+-> BiPredicate
+-> BiFunction
+-> BiConsumer
+    primitive functional interfaces
+-> IntPredicate
+-> IntFunction
+-> IntConsumer
+    All the functional interfaces are available in java.util.Function
+-> Predicate used to write conditional statemets without if/else;
+    Predicate<T> -> returns Boolean.
+    -> it can be used with streams filter in 1.8
+    Predicate<Employee> pEmpNo = e-> e.empNo >5;
+        Predicate<Employee> pEname = e-> e.empName.length()>5;
+        List<Employee> updatedEmployess = employees.stream().filter(pEmpNo.or(pEname)).collect(Collectors.toList());
+        p1.and(p2)
+    ->  interface predicate<T input>{
+            public boolean test(T);
+        }
+-> Function Interface 
+    Function<T,R> -> T is the input and R is the result
+    interface Function<T,R>
+    {
+        public R apply(T);
+    }
+-> Consumer<T> -> return void.
+    c1.andThen(c2).andThen(c3)
+    interface Consumer<T>{
+        public void accept(T);
+    }
+    
+-> Supplier
+    interface Supplier<R>
+    {
+        public R get();
+    }
+
+-> BiPredicate
+    interface BiPredicate<T,T>
+    {
+        public boolean test(T,T);
+    }
+
+
+
+
+
+

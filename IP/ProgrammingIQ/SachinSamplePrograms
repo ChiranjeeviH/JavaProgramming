@@ -1,0 +1,12 @@
+1. Count Number of Words and Vowels in a String 
+[Input: How are you | Output: Vowels- 4]
+[Input: How are you | Output: Words-3]
+
+2. Is it a Valid String?
+[Input: Chiranjeevi123$ | Output: False]
+[Input: Chiranjeevi | Output: True]
+
+3. To check if an array is sorted.
+4. To check if a LinkedList is sorted.
+5. Reverse a LinkedList.
+6. To check if a LinkedList has Loop.
